@@ -13,9 +13,17 @@
    --button-radius: 25%;
 }
 
+body {
+   font-family: 'Pt Sans', sans-serif;
+}
+
 .container {
-   width: 85%;
+   max-width: 85%;
    margin: 0 auto;
+}
+
+img {
+   width: 100%;
 }
 
 ul {
@@ -69,6 +77,9 @@ i.fa-solid.fa-bars {
 
 main {
    margin-top: 74px;
+}
+
+section {
    padding: 50px 0px;
 }
 
@@ -80,8 +91,30 @@ main {
    background-color: var(--complementary-color);
 }
 
+/* Strategic plan */
 
-@media screen and (min-width: 768px){
+.strategic-plan {
+   background-color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
 
    .card.main-card {
       width: 66%;
@@ -96,4 +129,18 @@ main {
 
 @media screen and (min-width: 992px) {
    
+   .container {
+      max-width: 992px;
+   }
+
+
+   /* strategic plan */
+
+   .strategic-plan .container {
+      max-width: 768px;
+   }
+
+   .strategic-plan .col {
+      width: 50%;
+   }
 }
