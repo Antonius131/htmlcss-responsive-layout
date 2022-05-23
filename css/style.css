@@ -97,6 +97,13 @@ section {
    background-color: var(--secondary-color);
 }
 
+/* benefits */
+
+.benefits {
+   background-color: var(--secondary-color);
+}
+
+
 
 
 
@@ -131,6 +138,13 @@ section {
       width: 100%;
    }
 
+   /* benefits */
+
+   .benefits .card {
+      width: calc(100% / 2 - 10px);
+      margin-bottom: 20px;
+   }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -150,4 +164,12 @@ section {
    .strategic-plan .col {
       width: 50%;
    }
+
+   /* benefits */
+
+   .benefits .card {
+      width: calc(100% / 3 - 10px);
+      margin-bottom: 14px;
+   }
+
 }
