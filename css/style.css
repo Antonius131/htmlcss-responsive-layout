@@ -303,6 +303,17 @@ footer {
       width: 100%;
    }
 
+   .testimonials .col-card {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+   }
+
+   .tst-text {
+      text-align: left;
+   }
+
+
    /* benefits */
 
    .benefits .card {
@@ -404,19 +415,6 @@ footer {
       width: calc(100% / 3 - 10px);
       margin-bottom: 14px;
    }
-
-   /* testimonials */
-
-   .testimonials .col-card {
-      display: flex;
-      align-items: center;
-      column-gap: 50px;
-   }
-
-   .tst-text {
-      text-align: left;
-   }
-
    /* about us */
 
    .about-us .col.main-col {
