@@ -33,6 +33,17 @@ body {
    background-color: var(--secondary-color);
 }
 
+a.btn {
+   color: var(--white-color);
+   border-radius: var(--button-radius);
+   background-color: var(--primary-color);
+   display: inline-block;
+   text-decoration: none;
+   padding: 12px 40px;
+   letter-spacing: .25rem;
+   font-weight: 600;
+}
+
 img {
    width: 100%;
 }
@@ -69,10 +80,14 @@ header {
    display: none;
 }
 
+a.btn.nav-btn {
+   font-weight: 400;
+   letter-spacing: inherit;
+}
+
 i.fa-solid.fa-bars {
    font-size: 1.5rem;
 }
-
 
 
 /**********
@@ -87,22 +102,70 @@ section {
    padding: 50px 0px;
 }
 
+/* main cards */
+
+.main-cards .card {
+   text-align: center;
+}
+
 .card {
    width: 100%;
-   height: 200px;
+   padding: 44px 40px;
    margin-bottom: 30px;
    border-radius: 20px;
    background-color: var(--complementary-color);
 }
 
+.card h2 {
+   color: var(--primary-color);
+   letter-spacing: 0.1rem;
+}
+
+.card p {
+   margin-top: 20px;
+   color: #526575;
+   font-weight: 600;
+   line-height: 1.75rem;
+}
+
+.card i {
+   font-size: 5rem;
+   margin-bottom: 20px;
+   color: var(--primary-color);
+}
+
+.card.main-card {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   row-gap: 30px;
+   padding: 44px 40px 0px 40px;
+   text-align: left;
+}
+
+.card.main-card i {
+   font-size: 1rem;
+   color: var(--white-color);
+   margin-bottom: 0;
+}
+
+.main-card a {
+   margin-top: 20px;
+}
+
+.main-card img {
+   display: block;
+}
+
+
+
 /* Strategic plan */
 
-
 .col {
-   height: 200px;
-   width: 100%;
    background-color: var(--complementary-color);
    border: 1px solid var(--primary-color);
+   height: 200px;
+   width: 100%;
 }
 
 
@@ -136,13 +199,26 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+   /* main cards */
+
    .card.main-card {
       width: 66%;
+      padding: 34px 30px 0px 34px;
+   }
+
+   .card.main-card img {
+      width: 60%;
    }
 
    .card {
       width: calc(100% / 3 - 10px);
       margin-bottom: 15px;
+      padding: 34px 30px;
+      align-self: stretch;
+   }
+
+   .card i {
+      font-size: 4rem;
    }
 
    /* strategic plan */
@@ -199,6 +275,34 @@ footer {
    
    .hamburger {
       display: none;
+   }
+
+   /* main cards */
+
+   .card.main-card {
+      flex-direction: row;
+      column-gap: 10px;
+      align-self: stretch;
+   }
+
+   .card.main-card .txt-content {
+      width: 55%;
+   }
+
+   .card.main-card .img-content {
+      width: 45%;
+   }
+
+   .card.main-card img {
+      width: 100%;
+   }
+
+   .txt-content {
+      padding-bottom: 30px;
+   }
+
+   .img-content {
+      align-self: flex-end;
    }
 
    /* strategic plan */
