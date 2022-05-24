@@ -202,6 +202,50 @@ section {
 }
 
 
+/* testimonials */
+
+.testimonials .col-card {
+   background-color: var(--secondary-color);
+   color: var(--white-color);
+}
+
+.testimonials .col-text {
+   text-align: center;
+}
+
+.testimonials h5 {
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+.testimonials h2 {
+   color: var(--secondary-color);
+   margin-bottom: 20px;
+}
+
+.test-img-box {
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+}
+
+.testimonials img {
+   height: 200px;
+   width: 200px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.testimonials i {
+   font-size: 1.5rem;
+}
+
+.testimonials strong {
+   display: inline-block;
+   margin-top: 20px;
+   text-transform: uppercase;
+}
+
 /**********
    Footer 
 **********/
@@ -359,6 +403,18 @@ footer {
    .benefits .card {
       width: calc(100% / 3 - 10px);
       margin-bottom: 14px;
+   }
+
+   /* testimonials */
+
+   .testimonials .col-card {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+   }
+
+   .tst-text {
+      text-align: left;
    }
 
    /* about us */
