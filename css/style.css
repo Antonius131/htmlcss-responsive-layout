@@ -160,8 +160,6 @@ section {
    display: block;
 }
 
-
-
 /* Strategic plan */
 
 
@@ -200,7 +198,6 @@ section {
    border-radius: 30px;
    margin-top: 20px;
 }
-
 
 /* testimonials */
 
@@ -245,6 +242,36 @@ section {
    margin-top: 20px;
    text-transform: uppercase;
 }
+
+/* benefits */
+
+.benefits h2 {
+   text-align: center;
+   color: var(--white-color);
+   font-size: 2rem;
+}
+
+.benefits .col-card {
+   text-align: left;
+}
+
+.benefits .col-card h1 {
+   font-size: 3rem;
+   color: var(--secondary-color);
+   margin-bottom: 20px;
+}
+
+.benefits .col-card h3 {
+   color: var(--secondary-color);
+   margin-bottom: 20px;
+}
+
+.benefits a.btn {
+   background-color: var(--secondary-color);
+   margin-top: 20px;
+}
+
+
 
 /**********
    Footer 
@@ -313,12 +340,12 @@ footer {
       text-align: left;
    }
 
-
    /* benefits */
 
-   .benefits .card {
+   .benefits .col-card {
       width: calc(100% / 2 - 10px);
       margin-bottom: 20px;
+      margin-top: 0px;
    }
 
    /* about us */
@@ -411,7 +438,7 @@ footer {
 
    /* benefits */
 
-   .benefits .card {
+   .benefits .col-card {
       width: calc(100% / 3 - 10px);
       margin-bottom: 14px;
    }
